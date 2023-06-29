@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 enum StoryBoardName: String {
     case main = "Main"
-    case detailsTweet = "DetailsTweet"
+    case details = "DetailsMission"
     var storyboard: UIStoryboard {
         return UIStoryboard(name: self.rawValue, bundle: nil)
     }

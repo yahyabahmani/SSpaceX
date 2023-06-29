@@ -19,8 +19,9 @@ final class MainCoordinator: Coordinatable {
           viewModel.coordinator = self
           viewModel.delegate = vc
       }
-  func showShareList(_ text: String) {
-//    DetailsTweetCoordinator.init(text: text).coordinate(to: rootViewController)
+  func showDetails(_ model: MissionModel) {
+      
+      DetailsMissionCoordinator.init(mission: model).coordinate(to: rootViewController)
   }
   
   

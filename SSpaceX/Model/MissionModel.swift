@@ -50,4 +50,5 @@ struct MissionModel {
     let name, details, dateUTC: String?
     let smallPatch: String?
     let largePatch:String?
+    let wikipedia:String?
 }

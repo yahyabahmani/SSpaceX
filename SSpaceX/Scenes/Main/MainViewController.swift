@@ -22,6 +22,40 @@ class MainViewController: UIViewController {
     }
     func bindView(){
         
+   
+        
+//        self.viewModel.reloadRows = {[weak self] indexTemp in
+//            guard let self = self else {return}
+//            DispatchQueue.main.async {
+//
+//                self.tableView.beginUpdates()
+//                               self.tableView.insertRows(at: indexTemp, with: .bottom)
+//                               self.tableView.endUpdates()
+//            }
+//
+//        }
+        
+//        self.viewModel.indexMission.sink {[unowned self] (str) in
+//
+//
+//            print(str.count)
+//        } receiveValue: { [unowned self] (str) in
+//            DispatchQueue.main.async {
+//                self.tableView.beginUpdates()
+//                self.tableView.insertRows(at: str, with: .bottom)
+//                self.tableView.endUpdates()
+//            }
+//        }.store(in: &subscriptions)
+        
+//        self.viewModel.indexMission.sink { [unowned self] (value) in
+//            print("missions.sink\(value.count)")
+//            if value.count > 0{
+//                DispatchQueue.main.async {
+//                    self.tableView.reloadData()
+//                }
+//            }
+//
+//        }.store(in: &subscriptions)
         self.viewModel.missions.sink { [unowned self] (value) in
             print("missions.sink\(value.count)")
             if value.count > 0{
@@ -85,6 +119,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
            }
        }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.viewModel.showDetails(self.viewModel.missions.value[indexPath.row])
+    }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.section == 0 && indexPath.row == self.viewModel.missions.value.count - 1,!self.viewModel.isLastPage {
               viewModel.fetchData()

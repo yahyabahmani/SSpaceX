@@ -8,18 +8,18 @@
 import Foundation
 import Combine
 final class MainViewModel: BaseViewModel {
+    let indexMission = CurrentValueSubject<[IndexPath], Never>([IndexPath]())
     var reloadRows: (([IndexPath]) -> ())?
     let missions = CurrentValueSubject<[MissionModel], Never>([MissionModel]())
-    var subsciptions = Set<AnyCancellable>()
-    let membershipRepository = MembershipRepository()
     var isLastPage = false
+    private let membershipRepository = MembershipRepository()
     private var total: Int = 1
     private var pageNumber: Int = 0
     var isLoading = false
     
     
-    func showDetails(_ text: String) {
-        (self.coordinator as? MainCoordinator)?.showShareList(text)
+    func showDetails(_ model: MissionModel) {
+        (self.coordinator as? MainCoordinator)?.showDetails(model)
     }
     
 
@@ -60,7 +60,8 @@ final class MainViewModel: BaseViewModel {
             indexPaths.append(IndexPath(row: self.missions.value.count+i, section: 0))
         }
         self.missions.value.append(contentsOf:(model))
-        self.reloadRows?(indexPaths)
+//        indexMission.send(indexPaths)
+//        self.reloadRows?(indexPaths)
     }
     
 

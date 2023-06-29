@@ -42,6 +42,16 @@
 		CD8175C92A4C4AAA0023EA94 /* MainIndicatorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8175C72A4C4AAA0023EA94 /* MainIndicatorTableViewCell.xib */; };
 		CD8175CB2A4C4F1D0023EA94 /* DateFormatter+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175CA2A4C4F1D0023EA94 /* DateFormatter+Helper.swift */; };
 		CD8175CD2A4C4F7F0023EA94 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175CC2A4C4F7F0023EA94 /* Constant.swift */; };
+		CD8175D02A4C584F0023EA94 /* DetailsMissionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175CF2A4C584F0023EA94 /* DetailsMissionCoordinator.swift */; };
+		CD8175D22A4C58660023EA94 /* DetailsMissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175D12A4C58660023EA94 /* DetailsMissionViewModel.swift */; };
+		CD8175D42A4C587D0023EA94 /* DetailsMissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175D32A4C587D0023EA94 /* DetailsMissionController.swift */; };
+		CD8175D62A4C58A70023EA94 /* DetailsMission.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8175D52A4C58A70023EA94 /* DetailsMission.storyboard */; };
+		CD8175DA2A4CA9170023EA94 /* DetailsImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175D82A4CA9170023EA94 /* DetailsImageTableViewCell.swift */; };
+		CD8175DB2A4CA9170023EA94 /* DetailsImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8175D92A4CA9170023EA94 /* DetailsImageTableViewCell.xib */; };
+		CD8175DE2A4CA9F00023EA94 /* DetailsTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175DC2A4CA9F00023EA94 /* DetailsTextTableViewCell.swift */; };
+		CD8175DF2A4CA9F00023EA94 /* DetailsTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8175DD2A4CA9F00023EA94 /* DetailsTextTableViewCell.xib */; };
+		CD8175E22A4CAA5D0023EA94 /* DetailsSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175E02A4CAA5D0023EA94 /* DetailsSelectTableViewCell.swift */; };
+		CD8175E32A4CAA5D0023EA94 /* DetailsSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8175E12A4CAA5D0023EA94 /* DetailsSelectTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +111,16 @@
 		CD8175C72A4C4AAA0023EA94 /* MainIndicatorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainIndicatorTableViewCell.xib; sourceTree = "<group>"; };
 		CD8175CA2A4C4F1D0023EA94 /* DateFormatter+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Helper.swift"; sourceTree = "<group>"; };
 		CD8175CC2A4C4F7F0023EA94 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CD8175CF2A4C584F0023EA94 /* DetailsMissionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMissionCoordinator.swift; sourceTree = "<group>"; };
+		CD8175D12A4C58660023EA94 /* DetailsMissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMissionViewModel.swift; sourceTree = "<group>"; };
+		CD8175D32A4C587D0023EA94 /* DetailsMissionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMissionController.swift; sourceTree = "<group>"; };
+		CD8175D52A4C58A70023EA94 /* DetailsMission.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsMission.storyboard; sourceTree = "<group>"; };
+		CD8175D82A4CA9170023EA94 /* DetailsImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsImageTableViewCell.swift; sourceTree = "<group>"; };
+		CD8175D92A4CA9170023EA94 /* DetailsImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsImageTableViewCell.xib; sourceTree = "<group>"; };
+		CD8175DC2A4CA9F00023EA94 /* DetailsTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTextTableViewCell.swift; sourceTree = "<group>"; };
+		CD8175DD2A4CA9F00023EA94 /* DetailsTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTextTableViewCell.xib; sourceTree = "<group>"; };
+		CD8175E02A4CAA5D0023EA94 /* DetailsSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsSelectTableViewCell.swift; sourceTree = "<group>"; };
+		CD8175E12A4CAA5D0023EA94 /* DetailsSelectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsSelectTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +252,7 @@
 		CD8175AE2A4AFABA0023EA94 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CD8175CE2A4C57F40023EA94 /* Details */,
 				CD8175AF2A4AFAC80023EA94 /* Main */,
 			);
 			path = Scenes;
@@ -265,6 +286,31 @@
 				CD8175BD2A4C133A0023EA94 /* MainTableViewCell.xib */,
 				CD8175C62A4C4AAA0023EA94 /* MainIndicatorTableViewCell.swift */,
 				CD8175C72A4C4AAA0023EA94 /* MainIndicatorTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CD8175CE2A4C57F40023EA94 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				CD8175D72A4CA8E80023EA94 /* Cell */,
+				CD8175CF2A4C584F0023EA94 /* DetailsMissionCoordinator.swift */,
+				CD8175D12A4C58660023EA94 /* DetailsMissionViewModel.swift */,
+				CD8175D32A4C587D0023EA94 /* DetailsMissionController.swift */,
+				CD8175D52A4C58A70023EA94 /* DetailsMission.storyboard */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		CD8175D72A4CA8E80023EA94 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CD8175D82A4CA9170023EA94 /* DetailsImageTableViewCell.swift */,
+				CD8175D92A4CA9170023EA94 /* DetailsImageTableViewCell.xib */,
+				CD8175DC2A4CA9F00023EA94 /* DetailsTextTableViewCell.swift */,
+				CD8175DD2A4CA9F00023EA94 /* DetailsTextTableViewCell.xib */,
+				CD8175E02A4CAA5D0023EA94 /* DetailsSelectTableViewCell.swift */,
+				CD8175E12A4CAA5D0023EA94 /* DetailsSelectTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -375,8 +421,12 @@
 			files = (
 				CD81756D2A4AC2520023EA94 /* LaunchScreen.storyboard in Resources */,
 				CD81756A2A4AC2520023EA94 /* Assets.xcassets in Resources */,
+				CD8175D62A4C58A70023EA94 /* DetailsMission.storyboard in Resources */,
+				CD8175E32A4CAA5D0023EA94 /* DetailsSelectTableViewCell.xib in Resources */,
+				CD8175DF2A4CA9F00023EA94 /* DetailsTextTableViewCell.xib in Resources */,
 				CD8175BF2A4C133A0023EA94 /* MainTableViewCell.xib in Resources */,
 				CD8175C92A4C4AAA0023EA94 /* MainIndicatorTableViewCell.xib in Resources */,
+				CD8175DB2A4CA9170023EA94 /* DetailsImageTableViewCell.xib in Resources */,
 				CD8175652A4AC2500023EA94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,8 +454,13 @@
 			files = (
 				CD8175BE2A4C133A0023EA94 /* MainTableViewCell.swift in Sources */,
 				CD8175A32A4AF2120023EA94 /* AlertTemplate.swift in Sources */,
+				CD8175D22A4C58660023EA94 /* DetailsMissionViewModel.swift in Sources */,
+				CD8175D02A4C584F0023EA94 /* DetailsMissionCoordinator.swift in Sources */,
+				CD8175DA2A4CA9170023EA94 /* DetailsImageTableViewCell.swift in Sources */,
 				CD81759D2A4AF2120023EA94 /* BaseCoordinate.swift in Sources */,
+				CD8175E22A4CAA5D0023EA94 /* DetailsSelectTableViewCell.swift in Sources */,
 				CD8175622A4AC2500023EA94 /* ViewController.swift in Sources */,
+				CD8175DE2A4CA9F00023EA94 /* DetailsTextTableViewCell.swift in Sources */,
 				CD8175A42A4AF2120023EA94 /* InstantiateViewControllerType.swift in Sources */,
 				CD8175B52A4AFB7A0023EA94 /* MaInCoordinator.swift in Sources */,
 				CD8175BA2A4B59A50023EA94 /* MissionRequestModel.swift in Sources */,
@@ -421,6 +476,7 @@
 				CD8175CB2A4C4F1D0023EA94 /* DateFormatter+Helper.swift in Sources */,
 				CD8175A22A4AF2120023EA94 /* Encodable+Helper.swift in Sources */,
 				CD8175A12A4AF2120023EA94 /* ExtensionTableView.swift in Sources */,
+				CD8175D42A4C587D0023EA94 /* DetailsMissionController.swift in Sources */,
 				CD8175C82A4C4AAA0023EA94 /* MainIndicatorTableViewCell.swift in Sources */,
 				CD8175CD2A4C4F7F0023EA94 /* Constant.swift in Sources */,
 				CD8175AD2A4AF23E0023EA94 /* HTTPService.swift in Sources */,
