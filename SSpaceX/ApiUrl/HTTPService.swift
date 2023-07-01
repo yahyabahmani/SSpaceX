@@ -48,48 +48,7 @@ final class HTTPService {
 
             task.resume()
         }
-    
-//class func request<T:Codable>(method: HTTPMethod, parameter: Dictionary<String, Any>? = nil,andUrl url:String,succeeded: @escaping ((T)->()),failure failed: @escaping ((Error)->())) {
-//      let headers: HTTPHeaders = [.authorization(bearerToken: ApiURL.token)]
-//  AF.request(url, method: method, parameters: parameter, encoding: JSONEncoding.default, headers: headers).validate().response { response in
-//            switch  response.result {
-//
-//            case .success:
-//            guard let value = response.data else {return}
-//            do {
-//                let objectPromote  = try JSONDecoder().decode(T.self, from: value)
-//
-//                succeeded(objectPromote)
-//            } catch {
-//                print(error)
-//              failed(ClientError.parser )
-//
-//            }
-//            case .failure(_):
-//              failed(parseError(statusCode: response.response?.statusCode))
-//            }
-//        }
-//}
-//  class func streamRequest<T:Codable>(method: HTTPMethod, parameter: Dictionary<String, Any>? = nil,andUrl url:String,succeeded: @escaping ((T)->()),failure failed: @escaping ((Error)->())) {
-//        let headers: HTTPHeaders = [.authorization(bearerToken: ApiURL.token)]
-//    AF.streamRequest(url, method: method, headers: headers, automaticallyCancelOnStreamError: false).validate().responseStreamDecodable(of: T.self) { response in
-//      switch response.event {
-//         case let .stream(result):
-//             switch result {
-//             case let .success(value):
-//               succeeded(value)
-//             case let .failure(error):
-//                 print(error)
-//             }
-//         case let .complete(completion):
-//             print(completion)
-//         }
-//
-//    }
-//
-//
-//  }
-  
+
   
   
 

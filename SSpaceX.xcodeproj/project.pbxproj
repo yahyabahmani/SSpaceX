@@ -38,8 +38,6 @@
 		CD8175BF2A4C133A0023EA94 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8175BD2A4C133A0023EA94 /* MainTableViewCell.xib */; };
 		CD8175C12A4C19CE0023EA94 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175C02A4C19CE0023EA94 /* ImageLoader.swift */; };
 		CD8175C52A4C4A150023EA94 /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175C42A4C4A150023EA94 /* UIImage+Helper.swift */; };
-		CD8175C82A4C4AAA0023EA94 /* MainIndicatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175C62A4C4AAA0023EA94 /* MainIndicatorTableViewCell.swift */; };
-		CD8175C92A4C4AAA0023EA94 /* MainIndicatorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8175C72A4C4AAA0023EA94 /* MainIndicatorTableViewCell.xib */; };
 		CD8175CB2A4C4F1D0023EA94 /* DateFormatter+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175CA2A4C4F1D0023EA94 /* DateFormatter+Helper.swift */; };
 		CD8175CD2A4C4F7F0023EA94 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175CC2A4C4F7F0023EA94 /* Constant.swift */; };
 		CD8175D02A4C584F0023EA94 /* DetailsMissionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175CF2A4C584F0023EA94 /* DetailsMissionCoordinator.swift */; };
@@ -112,8 +110,6 @@
 		CD8175BD2A4C133A0023EA94 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		CD8175C02A4C19CE0023EA94 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		CD8175C42A4C4A150023EA94 /* UIImage+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
-		CD8175C62A4C4AAA0023EA94 /* MainIndicatorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIndicatorTableViewCell.swift; sourceTree = "<group>"; };
-		CD8175C72A4C4AAA0023EA94 /* MainIndicatorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainIndicatorTableViewCell.xib; sourceTree = "<group>"; };
 		CD8175CA2A4C4F1D0023EA94 /* DateFormatter+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Helper.swift"; sourceTree = "<group>"; };
 		CD8175CC2A4C4F7F0023EA94 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		CD8175CF2A4C584F0023EA94 /* DetailsMissionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMissionCoordinator.swift; sourceTree = "<group>"; };
@@ -297,8 +293,6 @@
 			children = (
 				CD8175BC2A4C133A0023EA94 /* MainTableViewCell.swift */,
 				CD8175BD2A4C133A0023EA94 /* MainTableViewCell.xib */,
-				CD8175C62A4C4AAA0023EA94 /* MainIndicatorTableViewCell.swift */,
-				CD8175C72A4C4AAA0023EA94 /* MainIndicatorTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -456,7 +450,6 @@
 				CD8175E32A4CAA5D0023EA94 /* DetailsSelectTableViewCell.xib in Resources */,
 				CD8175DF2A4CA9F00023EA94 /* DetailsTextTableViewCell.xib in Resources */,
 				CD8175BF2A4C133A0023EA94 /* MainTableViewCell.xib in Resources */,
-				CD8175C92A4C4AAA0023EA94 /* MainIndicatorTableViewCell.xib in Resources */,
 				CD8175DB2A4CA9170023EA94 /* DetailsImageTableViewCell.xib in Resources */,
 				CD8175652A4AC2500023EA94 /* Main.storyboard in Resources */,
 			);
@@ -510,7 +503,6 @@
 				CD8175A22A4AF2120023EA94 /* Encodable+Helper.swift in Sources */,
 				CD8175A12A4AF2120023EA94 /* ExtensionTableView.swift in Sources */,
 				CD8175D42A4C587D0023EA94 /* DetailsMissionController.swift in Sources */,
-				CD8175C82A4C4AAA0023EA94 /* MainIndicatorTableViewCell.swift in Sources */,
 				CD8175CD2A4C4F7F0023EA94 /* Constant.swift in Sources */,
 				CD8175AD2A4AF23E0023EA94 /* HTTPService.swift in Sources */,
 				CD8175C52A4C4A150023EA94 /* UIImage+Helper.swift in Sources */,

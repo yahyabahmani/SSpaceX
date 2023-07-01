@@ -9,8 +9,8 @@ import Foundation
 
 final class DetailsMissionViewModel: BaseViewModel {
     private var mission: MissionModel
+    private var bookmarkImage = ""
     var dataSource = [CellType]()
-    var bookmarkImage = ""
     var reload: ((Int) -> ())?
     init(mission: MissionModel) {
         self.mission = mission
@@ -20,18 +20,18 @@ final class DetailsMissionViewModel: BaseViewModel {
             self.dataSource.append(.image(url: url, id: self.bookmarkImage))
         }
         if var title = self.mission.name {
-            title = "Name :\(title)"
+            title = Constants.nameString  + title
             self.dataSource.append(.title(title: title))
         }
         if var flightNumber = self.mission.flightNumber {
-            flightNumber = "Flight Number :\(flightNumber)"
+            flightNumber = Constants.flightNumber + flightNumber
             self.dataSource.append(.title(title: flightNumber))
         }
         if let date = self.mission.dateUTC{
             self.dataSource.append(.title(title: date))
         }
         if var details = self.mission.details {
-            details = "Details \(details)"
+            details = Constants.detailsString + details
             self.dataSource.append(.title(title: details))
         }
         if let wikipedia = self.mission.wikipedia{
