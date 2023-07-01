@@ -14,10 +14,16 @@ class DetailsMissionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
+        bind()
         // Do any additional setup after loading the view.
     }
-    
+    func bind(){
+        self.viewModel.reload = {[weak self] index in
+            self?.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .none)
+        }
+    }
     private func setupView(){
+        self.viewModel.initialCell()
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.registerCell(DetailsImageTableViewCell.nibName)
@@ -40,10 +46,11 @@ extension DetailsMissionController:  UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = self.viewModel.dataSource[indexPath.row]
         switch item{
-        case .image(let url):
+        case .image(let url,let id):
             
             let cell = tableView.dequeueReusableCell(withIdentifier: DetailsImageTableViewCell.nibName, for: indexPath) as! DetailsImageTableViewCell
-            cell.fillData(img: url)
+            cell.fillData(img: url,id:id)
+            cell.delegate = self
             
            return cell
         case .title(let title):
@@ -61,6 +68,13 @@ extension DetailsMissionController:  UITableViewDelegate, UITableViewDataSource 
         }
         
         
+    }
+    
+    
+}
+extension DetailsMissionController:DetailsImageTableViewCellDelegate{
+    func bookmarkSelect() {
+        self.viewModel.selectBookmark()
     }
     
     

@@ -39,7 +39,7 @@ struct MembershipRepository: ApiClientProtocol {
                 let  dateString =  Constants.dateString + dateFormatter.string(from: date)
                 let flightNumber = Constants.flightNumber + "\(item.flightNumber ?? 0)"
                 
-                return MissionModel(flightNumber: flightNumber, totalPages:response.totalPages, name: item.name, details: item.details, dateUTC: dateString, smallPatch: item.links?.patch?.small, largePatch: item.links?.patch?.large,wikipedia:item.links?.wikipedia)
+                return MissionModel(id:item.id ,flightNumber: flightNumber, totalPages:response.totalPages, name: item.name, details: item.details, dateUTC: dateString, smallPatch: item.links?.patch?.small, largePatch: item.links?.patch?.large,wikipedia:item.links?.wikipedia)
             }
             return MissionModelAll(total: response.totalDocs, mission: missionModel)
         }

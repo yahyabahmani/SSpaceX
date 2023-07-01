@@ -42,7 +42,10 @@
                             <constraint firstAttribute="width" constant="45" id="nuM-yf-hZe"/>
                         </constraints>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title=" "/>
+                        <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system" title=" "/>
+                        <connections>
+                            <action selector="bookmarkSelect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8Xd-OA-o1E"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -56,12 +59,14 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="bannerImageView" destination="nOc-Of-ch5" id="gUC-5T-EAY"/>
+                <outlet property="bannerImageView" destination="nOc-Of-ch5" id="1aZ-uj-NRL"/>
+                <outlet property="bookMarkButton" destination="Hnc-gj-u7S" id="pUE-4G-Myc"/>
             </connections>
             <point key="canvasLocation" x="13.740458015267174" y="32.394366197183103"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -17,11 +17,11 @@ struct MissionModelResponse: Codable {
     
     struct Doc: Codable {
         let flightNumber,date_unix: Int?
-        let name, details, dateUTC: String?
+        let name, details,id, dateUTC: String?
         let links: MediaLinks?
         
         enum CodingKeys: String, CodingKey {
-            case name, details, links,date_unix
+            case name, details, links,date_unix,id
             case flightNumber = "flight_number"
             case dateUTC = "date_utc"
 
@@ -45,6 +45,7 @@ struct MissionModelAll {
     
 }
 struct MissionModel {
+    let id:String?
     let flightNumber:String?
     let totalPages: Int?
     let name, details, dateUTC: String?

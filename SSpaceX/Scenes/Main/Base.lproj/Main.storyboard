@@ -44,8 +44,8 @@
             <objects>
                 <navigationController storyboardIdentifier="MainViewControllerNC" automaticallyAdjustsScrollViewInsets="NO" id="LIO-5p-eM0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Gcn-E3-1gE">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gcn-E3-1gE">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

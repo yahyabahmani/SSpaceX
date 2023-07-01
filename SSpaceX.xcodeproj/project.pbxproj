@@ -52,6 +52,9 @@
 		CD8175DF2A4CA9F00023EA94 /* DetailsTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8175DD2A4CA9F00023EA94 /* DetailsTextTableViewCell.xib */; };
 		CD8175E22A4CAA5D0023EA94 /* DetailsSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8175E02A4CAA5D0023EA94 /* DetailsSelectTableViewCell.swift */; };
 		CD8175E32A4CAA5D0023EA94 /* DetailsSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8175E12A4CAA5D0023EA94 /* DetailsSelectTableViewCell.xib */; };
+		CDBB89862A500F9C009D17C1 /* Bookmark+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB89842A500F9C009D17C1 /* Bookmark+CoreDataClass.swift */; };
+		CDBB89872A500F9C009D17C1 /* Bookmark+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB89852A500F9C009D17C1 /* Bookmark+CoreDataProperties.swift */; };
+		CDBB898A2A5014A4009D17C1 /* BookmarkDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB89892A5014A4009D17C1 /* BookmarkDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +124,9 @@
 		CD8175DD2A4CA9F00023EA94 /* DetailsTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTextTableViewCell.xib; sourceTree = "<group>"; };
 		CD8175E02A4CAA5D0023EA94 /* DetailsSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsSelectTableViewCell.swift; sourceTree = "<group>"; };
 		CD8175E12A4CAA5D0023EA94 /* DetailsSelectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsSelectTableViewCell.xib; sourceTree = "<group>"; };
+		CDBB89842A500F9C009D17C1 /* Bookmark+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bookmark+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CDBB89852A500F9C009D17C1 /* Bookmark+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bookmark+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CDBB89892A5014A4009D17C1 /* BookmarkDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,7 @@
 		CD81755C2A4AC2500023EA94 /* SSpaceX */ = {
 			isa = PBXGroup;
 			children = (
+				CDBB89882A500FAF009D17C1 /* Bookmark */,
 				CD8175B62A4B56E30023EA94 /* Model */,
 				CD8175AE2A4AFABA0023EA94 /* Scenes */,
 				CD8175972A4AF2120023EA94 /* Extenstion */,
@@ -315,6 +322,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		CDBB89882A500FAF009D17C1 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				CDBB89842A500F9C009D17C1 /* Bookmark+CoreDataClass.swift */,
+				CDBB89852A500F9C009D17C1 /* Bookmark+CoreDataProperties.swift */,
+				CDBB89892A5014A4009D17C1 /* BookmarkDB.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -455,6 +472,7 @@
 				CD8175BE2A4C133A0023EA94 /* MainTableViewCell.swift in Sources */,
 				CD8175A32A4AF2120023EA94 /* AlertTemplate.swift in Sources */,
 				CD8175D22A4C58660023EA94 /* DetailsMissionViewModel.swift in Sources */,
+				CDBB898A2A5014A4009D17C1 /* BookmarkDB.swift in Sources */,
 				CD8175D02A4C584F0023EA94 /* DetailsMissionCoordinator.swift in Sources */,
 				CD8175DA2A4CA9170023EA94 /* DetailsImageTableViewCell.swift in Sources */,
 				CD81759D2A4AF2120023EA94 /* BaseCoordinate.swift in Sources */,
@@ -467,6 +485,7 @@
 				CD8175AB2A4AF23E0023EA94 /* ApiURL.swift in Sources */,
 				CD8175AC2A4AF23E0023EA94 /* MembershipRepository.swift in Sources */,
 				CD8175A02A4AF2120023EA94 /* UIView+Helper.swift in Sources */,
+				CDBB89862A500F9C009D17C1 /* Bookmark+CoreDataClass.swift in Sources */,
 				CD8175B12A4AFB490023EA94 /* MainViewController.swift in Sources */,
 				CD81755E2A4AC2500023EA94 /* AppDelegate.swift in Sources */,
 				CD8175602A4AC2500023EA94 /* SceneDelegate.swift in Sources */,
@@ -484,6 +503,7 @@
 				CD8175B82A4B57C00023EA94 /* MissionModel.swift in Sources */,
 				CD8175AA2A4AF23E0023EA94 /* ApiClientProtocol.swift in Sources */,
 				CD81759E2A4AF2120023EA94 /* BaseViewModel.swift in Sources */,
+				CDBB89872A500F9C009D17C1 /* Bookmark+CoreDataProperties.swift in Sources */,
 				CD8175B32A4AFB5D0023EA94 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
