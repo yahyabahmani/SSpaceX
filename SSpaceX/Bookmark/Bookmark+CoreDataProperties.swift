@@ -2,7 +2,7 @@
 //  Bookmark+CoreDataProperties.swift
 //  SSpaceX
 //
-//  Created by Jabama on 7/1/23.
+//  Created by yahya on 7/1/23.
 //
 //
 

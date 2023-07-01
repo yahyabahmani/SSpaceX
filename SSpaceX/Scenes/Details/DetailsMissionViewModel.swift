@@ -2,22 +2,22 @@
 //  DetailsMissionViewModel.swift
 //  SSpaceX
 //
-//  Created by Jabama on 6/28/23.
+//  Created by yahya on 6/28/23.
 //
 
 import Foundation
 
 final class DetailsMissionViewModel: BaseViewModel {
-   private var mission: MissionModel
+    private var mission: MissionModel
     var dataSource = [CellType]()
     var bookmarkImage = ""
     var reload: ((Int) -> ())?
     init(mission: MissionModel) {
-    self.mission = mission
-  }
-    func createCell(){
-       if let url = self.mission.smallPatch {
-           self.dataSource.append(.image(url: url, id: self.bookmarkImage))
+        self.mission = mission
+    }
+    private func createCell(){
+        if let url = self.mission.smallPatch {
+            self.dataSource.append(.image(url: url, id: self.bookmarkImage))
         }
         if var title = self.mission.name {
             title = "Name :\(title)"
@@ -40,12 +40,12 @@ final class DetailsMissionViewModel: BaseViewModel {
         
     }
     func initialCell(){
-            self.checkBookMark { result in
-                self.bookmarkImage = result ? BookmarkStatus.enable.rawValue :  BookmarkStatus.disable.rawValue
-                self.createCell()
-            }
+        self.checkBookMark { result in
+            self.bookmarkImage = result ? BookmarkStatus.enable.rawValue :  BookmarkStatus.disable.rawValue
+            self.createCell()
+        }
     }
-    func checkBookMark(completion:@escaping (Bool)->()){
+    private   func checkBookMark(completion:@escaping (Bool)->()){
         guard let id = self.mission.id else{return }
         BookmarkDB.shared.checkID(id: id) { result in
             completion(result)
@@ -66,49 +66,48 @@ final class DetailsMissionViewModel: BaseViewModel {
             }
             self.updateImageRow()
         }
-    
-     
         
     }
-    func removeItemDB(){
+    private func removeItemDB(){
         guard let id = self.mission.id else{return }
         BookmarkDB.shared.deleteItem(id: id) { error in
             if error != nil{
                 self.errorWithDismissViewController(message: error?.localizedDescription ?? "")
-
+                
             }
         }
     }
-    func addItemDB(){
+    private   func addItemDB(){
         guard let id = self.mission.id else{return }
         BookmarkDB.shared.createItem(id: id) { error in
             if error != nil{
                 self.errorWithDismissViewController(message: error?.localizedDescription ?? "")
-
+                
             }
         }
     }
-    func updateImageRow(){
+    private func updateImageRow(){
         var image = ""
         let index =   self.dataSource.firstIndex { item in
-              switch  item{
-              case .image(let img,_):
-                  image = img
-                  return true
-              default :
-                  return false
-                  
-              }
-          }
+            switch  item{
+            case .image(let img,_):
+                image = img
+                return true
+            default :
+                return false
+                
+            }
+        }
         if let index = index {
             self.dataSource[index] = .image(url: image, id: self.bookmarkImage)
             self.reload?(index)
         }
-          
+        
     }
+    
     enum BookmarkStatus:String {
-    case enable = "bookmark.fill"
-    case disable = "bookmark"
+        case enable = "bookmark.fill"
+        case disable = "bookmark"
     }
     
     enum CellType {

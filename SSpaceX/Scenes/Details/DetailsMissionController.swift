@@ -2,22 +2,22 @@
 //  DetailsMissionCoordinatorViewController.swift
 //  SSpaceX
 //
-//  Created by Jabama on 6/28/23.
+//  Created by yahya on 6/28/23.
 //
 
 import UIKit
 
-class DetailsMissionController: UIViewController {
+final class DetailsMissionController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var viewModel: DetailsMissionViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
-        bind()
+        self.bind()
         // Do any additional setup after loading the view.
     }
-    func bind(){
+    private  func bind(){
         self.viewModel.reload = {[weak self] index in
             self?.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .none)
         }
