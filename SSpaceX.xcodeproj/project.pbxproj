@@ -55,6 +55,8 @@
 		CDBB89862A500F9C009D17C1 /* Bookmark+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB89842A500F9C009D17C1 /* Bookmark+CoreDataClass.swift */; };
 		CDBB89872A500F9C009D17C1 /* Bookmark+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB89852A500F9C009D17C1 /* Bookmark+CoreDataProperties.swift */; };
 		CDBB898A2A5014A4009D17C1 /* BookmarkDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB89892A5014A4009D17C1 /* BookmarkDB.swift */; };
+		CDBB898D2A505655009D17C1 /* Validation_Api_service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB898C2A505655009D17C1 /* Validation_Api_service.swift */; };
+		CDBB89902A50584F009D17C1 /* MockMissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB898F2A50584F009D17C1 /* MockMissionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +129,8 @@
 		CDBB89842A500F9C009D17C1 /* Bookmark+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bookmark+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CDBB89852A500F9C009D17C1 /* Bookmark+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bookmark+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CDBB89892A5014A4009D17C1 /* BookmarkDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDB.swift; sourceTree = "<group>"; };
+		CDBB898C2A505655009D17C1 /* Validation_Api_service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation_Api_service.swift; sourceTree = "<group>"; };
+		CDBB898F2A50584F009D17C1 /* MockMissionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMissionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +197,9 @@
 		CD8175762A4AC2530023EA94 /* SSpaceXTests */ = {
 			isa = PBXGroup;
 			children = (
+				CDBB898E2A505823009D17C1 /* Mock */,
 				CD8175772A4AC2530023EA94 /* SSpaceXTests.swift */,
+				CDBB898C2A505655009D17C1 /* Validation_Api_service.swift */,
 			);
 			path = SSpaceXTests;
 			sourceTree = "<group>";
@@ -330,6 +336,14 @@
 				CDBB89892A5014A4009D17C1 /* BookmarkDB.swift */,
 			);
 			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		CDBB898E2A505823009D17C1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				CDBB898F2A50584F009D17C1 /* MockMissionModel.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,6 +527,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD8175782A4AC2530023EA94 /* SSpaceXTests.swift in Sources */,
+				CDBB898D2A505655009D17C1 /* Validation_Api_service.swift in Sources */,
+				CDBB89902A50584F009D17C1 /* MockMissionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

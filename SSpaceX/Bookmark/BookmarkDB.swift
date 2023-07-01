@@ -13,7 +13,7 @@ class BookmarkDB{
     private var context:NSManagedObjectContext
     init() {
         self.context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-
+        
     }
     func checkID(id:String,completion : @escaping(Bool) -> Void,errorCompletion : @escaping(Error?) -> Void) {
         do {
@@ -26,15 +26,13 @@ class BookmarkDB{
     }
     
     func deleteItem(id:String, completion : @escaping(Error?) -> Void){
-      
-//        context.delete(item)
         do {
-            var fetch = try context.fetch(Bookmark.fetchRequest())
+            let fetch = try context.fetch(Bookmark.fetchRequest())
             let filterSelect = fetch.filter{($0.id == id)}
             for item in filterSelect {
                 context.delete(item)
             }
-
+            
             try context.save()
             completion(nil)
         }catch{

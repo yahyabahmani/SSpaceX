@@ -30,7 +30,7 @@ struct MembershipRepository: ApiClientProtocol {
             
         }
     }
-        func mapperMissionModelResponseToMissionModel(response:MissionModelResponse)->MissionModelAll?{
+     private   func mapperMissionModelResponseToMissionModel(response:MissionModelResponse)->MissionModelAll?{
             guard let docs = response.docs else{return nil}
             
             let missionModel =   docs.map { item in
