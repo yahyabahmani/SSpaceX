@@ -19,9 +19,11 @@ struct MissionModelResponse: Codable {
         let flightNumber,date_unix: Int?
         let name, details,id, dateUTC: String?
         let links: MediaLinks?
+        let success: Bool?
+
         
         enum CodingKeys: String, CodingKey {
-            case name, details, links,date_unix,id
+            case name, details, links,date_unix,id,success
             case flightNumber = "flight_number"
             case dateUTC = "date_utc"
 
@@ -52,4 +54,5 @@ struct MissionModel {
     let smallPatch: String?
     let largePatch:String?
     let wikipedia:String?
+    let success:Bool?
 }
